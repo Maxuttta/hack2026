@@ -32,8 +32,10 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Install collaboration service dependencies
         run: pnpm --dir collaboration-server install --frozen-lockfile
-      - name: Build installer
-        run: pnpm dist
+      - name: Build installer without automatic publication
+        run: |
+          pnpm run predist
+          pnpm exec electron-builder --win nsis --x64 --publish never
       - name: Accept demo and large-file workflows
         run: |
           pnpm smoke
