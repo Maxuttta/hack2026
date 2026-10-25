@@ -31,7 +31,7 @@ jobs:
       - name: Install desktop dependencies
         run: pnpm install --frozen-lockfile
       - name: Install collaboration service dependencies
-        run: pnpm --dir collaboration-server install --frozen-lockfile
+        run: npm install --prefix collaboration-server --omit=dev --no-audit --no-fund
       - name: Build installer without automatic publication
         run: |
           pnpm run predist

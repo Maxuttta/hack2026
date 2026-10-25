@@ -1,6 +1,7 @@
 # Dependencies and generated clients
 node_modules/
 collaboration-server/node_modules/
+collaboration-server/package-lock.json
 collaboration-client.js
 analyzer/bin/
 

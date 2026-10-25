@@ -40,6 +40,7 @@ Requirements: **Windows x64**, **Node.js 22+**, **pnpm 10+**, and a **JDK 17 x64
   --output runtime
 
 pnpm install --frozen-lockfile
+npm install --prefix collaboration-server --omit=dev --no-audit --no-fund
 pnpm start       # run from source
 pnpm dist        # create dist/Java Blueprints Setup <version>.exe
 ```
@@ -59,7 +60,7 @@ The prepared demo uses **8 behavior scenarios**. They are concrete evidence, not
 
 ## Verification
 
-Build the installer first. Then run these acceptance commands against the unpacked executable:
+Build the installer and install the collaboration service dependencies first. Then run these acceptance commands against the unpacked executable:
 
 ```powershell
 pnpm smoke
