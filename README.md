@@ -8,7 +8,7 @@
 
 Windows desktop workbench for the 2026 hackathon case: Java 17 source editor, editable program graph, AST diagnostics, verified example refactoring, and live shared projects.
 
-[Quick start](#quick-start) · [Three-minute demo](#three-minute-demo) · [Build](#build-from-source) · [Architecture](docs/ARCHITECTURE.md) · [Case coverage](docs/CASE.md)
+[Download for Windows](https://github.com/Maxuttta/hack2026/releases/download/v0.6.0/Java.Blueprints.Setup.0.6.0.exe) · [Three-minute demo](#three-minute-demo) · [Build](#build-from-source) · [Architecture](docs/ARCHITECTURE.md) · [Case coverage](docs/CASE.md)
 
 </div>
 
@@ -26,7 +26,7 @@ The **1,000-line case demo** contains a nested search (`O(n²)` for the repeated
 
 ### Run the Windows app
 
-Build the `.exe` below. When a GitHub release is attached, its installer is the quickest option. The installed app includes its Java 17 compiler and runtime; end users do not need a separate JDK. `dist/win-unpacked/Java Blueprints.exe` is the unpacked local build. The installer is currently unsigned.
+Download the [Windows x64 installer](https://github.com/Maxuttta/hack2026/releases/download/v0.6.0/Java.Blueprints.Setup.0.6.0.exe) or build it below. The installed app includes its Java 17 compiler and runtime; end users do not need a separate JDK. `dist/win-unpacked/Java Blueprints.exe` is the unpacked local build. The installer is currently unsigned. The [release page](https://github.com/Maxuttta/hack2026/releases/tag/v0.6.0) includes its SHA-256 hash.
 
 ### Build from source
 

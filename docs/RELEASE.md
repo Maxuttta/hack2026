@@ -1,6 +1,6 @@
 # Release guide
 
-The Git repository contains source and documentation. Generated JDK images, installers, local app profiles, collaboration keys and server data stay outside Git.
+The Git repository contains source and documentation. The [v0.6.0 release](https://github.com/Maxuttta/hack2026/releases/tag/v0.6.0) carries the Windows installer. Generated JDK images, installers, local app profiles, collaboration keys and server data stay outside Git.
 
 ## Create the Windows package
 
