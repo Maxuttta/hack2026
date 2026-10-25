@@ -1,0 +1,9 @@
+{
+  "name": "java-blueprints-collaboration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.mjs" },
+  "dependencies": { "ws": "8.18.3", "yjs": "13.6.27" },
+  "engines": { "node": ">=20" }
+}

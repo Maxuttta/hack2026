@@ -1,0 +1,72 @@
+{
+  "name": "java-blueprints",
+  "version": "0.6.0",
+  "private": true,
+  "description": "Java Blueprints visual Java workbench",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "prestart": "node scripts/build-analyzer.cjs && node scripts/build-collaboration.cjs",
+    "start": "electron .",
+    "predist": "node scripts/build-analyzer.cjs && node scripts/build-collaboration.cjs",
+    "dist": "electron-builder --win nsis --x64",
+    "smoke": "node scripts/smoke-electron.cjs",
+    "acceptance:large": "node scripts/acceptance-large.cjs",
+    "acceptance:collaboration": "node scripts/acceptance-collaboration.cjs",
+    "acceptance:collaboration-desktop": "node scripts/acceptance-collaboration-desktop.cjs"
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.0",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.64.1"
+  },
+  "build": {
+    "appId": "com.axenix.javablueprints",
+    "productName": "Java Blueprints",
+    "protocols": [{ "name": "Java Blueprints invitation", "schemes": ["java-blueprints"] }],
+    "asar": true,
+    "files": [
+      "index.html",
+      "features.js",
+      "features.css",
+      "ui-en.js",
+      "workbench-actions.js",
+      "collaboration-client.js",
+      "assets/fonts/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "runtime",
+        "to": "runtime"
+      },
+      {
+        "from": "analyzer/bin",
+        "to": "analyzer"
+      }
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true
+    }
+  },
+  "dependencies": {
+    "yjs": "13.6.27"
+  }
+}

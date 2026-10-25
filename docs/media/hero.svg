@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Java Blueprints</title>
+  <desc id="desc">Dark Java workbench with linked source code and a visual flow graph</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#16191d"/><stop offset=".58" stop-color="#1f2329"/><stop offset="1" stop-color="#171b20"/></linearGradient>
+    <linearGradient id="glow" x2="1" y2="1"><stop stop-color="#31bbd9"/><stop offset=".56" stop-color="#635bdf"/><stop offset="1" stop-color="#ee6d8b"/></linearGradient>
+    <linearGradient id="selection" x2="1"><stop stop-color="#243b63"/><stop offset="1" stop-color="#27304b"/></linearGradient>
+    <pattern id="dots" width="19" height="19" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#38404b"/></pattern>
+    <filter id="shadow"><feDropShadow dx="0" dy="13" stdDeviation="17" flood-color="#000" flood-opacity=".45"/></filter>
+    <clipPath id="appclip"><rect x="620" y="61" width="914" height="394" rx="12"/></clipPath>
+  </defs>
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <circle cx="1472" cy="43" r="330" fill="#39446d" opacity=".12"/>
+  <circle cx="84" cy="533" r="295" fill="#128ab6" opacity=".08"/>
+  <path d="M0 467h1600" stroke="#353b43"/>
+  <rect x="67" y="79" width="48" height="48" rx="11" fill="url(#glow)"/>
+  <path d="M81 112V94l10-8 10 8v18M83 100h18M89 106h7" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="133" y="113" fill="#f5f7fa" font-family="Arial, sans-serif" font-size="27" font-weight="700">Java Blueprints</text>
+  <rect x="67" y="165" width="184" height="30" rx="15" fill="#263d51" stroke="#42728b"/>
+  <circle cx="84" cy="180" r="4" fill="#6ee1cd"/>
+  <text x="99" y="185" fill="#b7e0ec" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4">JAVA 17 WORKBENCH</text>
+  <text x="64" y="264" fill="#f6f8fb" font-family="Arial, sans-serif" font-size="53" font-weight="700">Code. Graph.</text>
+  <text x="64" y="327" fill="#f6f8fb" font-family="Arial, sans-serif" font-size="53" font-weight="700">Confidence.</text>
+  <rect x="67" y="351" width="336" height="4" rx="2" fill="url(#glow)"/>
+  <text x="67" y="394" fill="#aeb7c4" font-family="Arial, sans-serif" font-size="19">See the program. Improve the design.</text>
+  <text x="67" y="421" fill="#aeb7c4" font-family="Arial, sans-serif" font-size="19">Compare what it actually does.</text>
+  <rect x="620" y="61" width="914" height="394" rx="12" fill="#15181c" stroke="#515864" stroke-width="2" filter="url(#shadow)"/>
+  <g clip-path="url(#appclip)">
+    <rect x="620" y="61" width="914" height="40" fill="#282d34"/>
+    <rect x="638" y="76" width="11" height="11" rx="2" fill="#6caef8"/>
+    <text x="658" y="87" fill="#cad2dd" font-family="Arial, sans-serif" font-size="14" font-weight="700">Blueprints</text>
+    <text x="1234" y="87" fill="#a9b3bf" font-family="Arial, sans-serif" font-size="12">Analyze</text>
+    <rect x="1300" y="70" width="69" height="25" rx="5" fill="#2d4059" stroke="#456994"/>
+    <text x="1321" y="87" fill="#c2dbfb" font-family="Arial, sans-serif" font-size="12">Build</text>
+    <rect x="1381" y="70" width="68" height="25" rx="5" fill="#24483f" stroke="#356d60"/>
+    <text x="1401" y="87" fill="#c4f1de" font-family="Arial, sans-serif" font-size="12">Run</text>
+    <rect x="620" y="101" width="152" height="354" fill="#1b1e23"/>
+    <rect x="773" y="101" width="365" height="354" fill="#191c20"/>
+    <rect x="1139" y="101" width="395" height="354" fill="#1c2026"/>
+    <path d="M772 101v354M1138 101v354" stroke="#373d47"/>
+    <text x="638" y="127" fill="#c7d0dc" font-family="Arial, sans-serif" font-size="12" font-weight="700">PROJECT</text>
+    <text x="644" y="156" fill="#a9b7c7" font-family="Arial, sans-serif" font-size="12">▾  src</text>
+    <rect x="630" y="166" width="135" height="24" rx="4" fill="url(#selection)"/>
+    <text x="653" y="183" fill="#cde1ff" font-family="Arial, sans-serif" font-size="12">◈ DemoMonolith.java</text>
+    <text x="653" y="212" fill="#9ca8b6" font-family="Arial, sans-serif" font-size="12">◈ Parser.java</text>
+    <text x="653" y="239" fill="#9ca8b6" font-family="Arial, sans-serif" font-size="12">◈ Analyzer.java</text>
+    <text x="653" y="266" fill="#9ca8b6" font-family="Arial, sans-serif" font-size="12">◈ Normalizer.java</text>
+    <rect x="773" y="101" width="365" height="31" fill="#23282f"/>
+    <text x="790" y="122" fill="#b6cced" font-family="Arial, sans-serif" font-size="12">DemoMonolith.java</text>
+    <rect x="773" y="132" width="365" height="323" fill="url(#dots)"/>
+    <g fill="none" stroke="#8191a7" stroke-width="2.2" stroke-linejoin="round"><path d="M954 204v24h-92v16"/><path d="M862 313v27h93v13"/><path d="M862 313v27h196v13"/></g>
+    <g fill="#b2becd"><path d="m857 242 5 6 5-6z"/><path d="m950 350 5 6 5-6z"/><path d="m1053 350 5 6 5-6z"/></g>
+    <rect x="863" y="163" width="181" height="42" rx="7" fill="#272b35" stroke="#7665c4"/>
+    <text x="878" y="181" fill="#ddccff" font-family="Arial, sans-serif" font-size="12" font-weight="700">METHOD</text>
+    <text x="878" y="195" fill="#aeb8c6" font-family="Consolas, monospace" font-size="10">main(String[] args)</text>
+    <rect x="797" y="247" width="131" height="65" rx="7" fill="#282d34" stroke="#5d8ecc"/>
+    <text x="810" y="266" fill="#b9d9ff" font-family="Arial, sans-serif" font-size="12" font-weight="700">VARIABLE</text>
+    <text x="810" y="286" fill="#b8c4d1" font-family="Consolas, monospace" font-size="10">List&lt;Item&gt; items</text>
+    <rect x="957" y="247" width="157" height="65" rx="7" fill="#2d2b30" stroke="#dc9a58"/>
+    <text x="971" y="266" fill="#ffc388" font-family="Arial, sans-serif" font-size="12" font-weight="700">NESTED LOOP</text>
+    <text x="971" y="286" fill="#b8c4d1" font-family="Consolas, monospace" font-size="10">for (Item item : items)</text>
+    <rect x="902" y="355" width="137" height="42" rx="7" fill="#26342d" stroke="#5eaa83"/>
+    <text x="918" y="373" fill="#b7ebcb" font-family="Arial, sans-serif" font-size="12" font-weight="700">RETURN</text>
+    <text x="918" y="387" fill="#b8c4d1" font-family="Consolas, monospace" font-size="10">return result;</text>
+    <rect x="1140" y="101" width="394" height="31" fill="#23282f"/>
+    <text x="1157" y="122" fill="#b6cced" font-family="Arial, sans-serif" font-size="12">Java source</text>
+    <g font-family="Consolas, monospace" font-size="12">
+      <text x="1159" y="164" fill="#667483">01</text><text x="1195" y="164" fill="#c5a6d9">public class</text><text x="1288" y="164" fill="#dddfe4">DemoMonolith {</text>
+      <text x="1159" y="188" fill="#667483">02</text><text x="1210" y="188" fill="#c5a6d9">public static void</text><text x="1340" y="188" fill="#bad8fc">main</text><text x="1375" y="188" fill="#dddfe4">(...) {</text>
+      <text x="1159" y="212" fill="#667483">03</text><text x="1225" y="212" fill="#c5a6d9">for</text><text x="1260" y="212" fill="#dddfe4">(Item item : items) {</text>
+      <rect x="1190" y="227" width="320" height="26" fill="#644537" opacity=".48"/>
+      <text x="1159" y="245" fill="#667483">04</text><text x="1240" y="245" fill="#c5a6d9">for</text><text x="1275" y="245" fill="#dddfe4">(Item other : items) {</text>
+      <text x="1159" y="273" fill="#667483">05</text><text x="1254" y="273" fill="#daba8a">if</text><text x="1280" y="273" fill="#dddfe4">(sameId(item, other))</text>
+      <text x="1159" y="301" fill="#667483">06</text><text x="1268" y="301" fill="#bad8fc">merge</text><text x="1310" y="301" fill="#dddfe4">(item, other);</text>
+      <text x="1159" y="328" fill="#667483">07</text><text x="1254" y="328" fill="#dddfe4">}</text>
+      <text x="1159" y="354" fill="#667483">08</text><text x="1239" y="354" fill="#dddfe4">}</text>
+    </g>
+    <rect x="1154" y="381" width="362" height="56" rx="6" fill="#222d2c" stroke="#39795e"/>
+    <circle cx="1173" cy="400" r="7" fill="#5abf87"/>
+    <path d="m1169 400 3 3 5-6" fill="none" stroke="#152a1d" stroke-width="2"/>
+    <text x="1190" y="403" fill="#a9e3c0" font-family="Arial, sans-serif" font-size="12" font-weight="700">Behavior preserved</text>
+    <text x="1170" y="424" fill="#a7b8b0" font-family="Arial, sans-serif" font-size="11">8 / 8 selected scenarios match</text>
+  </g>
+  <text x="67" y="494" fill="#697582" font-family="Arial, sans-serif" font-size="13" letter-spacing="1">JAVA ↔ GRAPH   ·   AST DIAGNOSTICS   ·   BEHAVIOR GATE   ·   LIVE COLLABORATION</text>
+</svg>

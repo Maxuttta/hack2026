@@ -1,0 +1,50 @@
+name: Windows build and acceptance
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  desktop:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          architecture: x64
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - name: Create bundled Java runtime
+        shell: pwsh
+        run: |
+          & "$env:JAVA_HOME\bin\jlink.exe" --add-modules java.se,jdk.compiler,jdk.unsupported,jdk.zipfs --strip-debug --no-header-files --no-man-pages --output runtime
+      - name: Install desktop dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Install collaboration service dependencies
+        run: pnpm --dir collaboration-server install --frozen-lockfile
+      - name: Build installer
+        run: pnpm dist
+      - name: Accept demo and large-file workflows
+        run: |
+          pnpm smoke
+          pnpm acceptance:large
+      - name: Accept collaboration service and desktop client
+        run: |
+          pnpm acceptance:collaboration
+          pnpm acceptance:collaboration-desktop
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: java-blueprints-windows-installer
+          path: dist/Java Blueprints Setup *.exe
+          if-no-files-found: error

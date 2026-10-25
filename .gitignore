@@ -1,0 +1,43 @@
+# Dependencies and generated clients
+node_modules/
+collaboration-server/node_modules/
+collaboration-client.js
+analyzer/bin/
+
+# Generated Java image and desktop artifacts
+runtime/
+dist/
+.deck-build/
+.deck-output/
+release/
+out/
+*.exe
+*.msi
+*.blockmap
+*.zip
+
+# Local state, secrets and host configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+collaboration.bin
+collaboration-server/data/
+data/
+
+# Editor and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary artifacts
+tmp/
+temp/
+*.tmp
